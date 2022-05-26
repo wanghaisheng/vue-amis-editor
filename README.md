@@ -84,27 +84,88 @@ export default Vue.extend({
 
 ```
 
-#### props：
-
-| prop          | type     | default                                                                                                                                  | explain                                                                                                               |
-| ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------- |
-| isPreview     | Boolean  | false                                                                                                                                    | Whether it is in preview                                                                                              |
-| isMobile      | Boolean  | false                                                                                                                                    | Is it mobile                                                                                                          | isMobile |
-| navHeight     | Number   | 50                                                                                                                                       | Toolbar height                                                                                                        |
-| isTools       | Boolean  | true                                                                                                                                     | Show and hide the toolbar                                                                                             |
-| sources       | Array    | []                                                                                                                                       | video's source link                                                                                                   |
-| theme         | Boolean  | false                                                                                                                                    | autoplay when video is loaded                                                                                         |
-| loop          | Boolean  | false                                                                                                                                    | [amis theme](https://aisuda.bce.baidu.com/amis/zh-CN/docs/start/getting-started#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98) |
-| toolbar       | Object   | ` {title: 'vue-amis-editor',preview: 'preview',release: 'release',edit: 'edit',obtain: 'obtain',copy: "copy",clear: 'clear',set: "set"}` | Toolbar configuration, support for internationalization                                                               |
-| value         | Object   | `{message: 'message'}`                                                                                                                   | [schemanode](https://aisuda.bce.baidu.com/amis/zh-CN/docs/types/schemanode)                                           |
-| onChange      | Function | `onChange(e)`                                                                                                                            | [amis onChange](https://www.npmjs.com/package/amis-editor)                                                            |
-| obtain        | Function | `obtain`                                                                                                                                 | Get the data in the current amis-editor                                                                               |
-| copy          | Function | `copy`                                                                                                                                   | Copy the data of amis-editor                                                                                          |
-| clear         | Function | `clear`                                                                                                                                  | data for clearamis-editor                                                                                             |
-| getSchema     | Function | `getSchema`                                                                                                                              | Get the data of amis-editor                                                                                           |
-| setSchema     | Function | `setSchema(Schema)`                                                                                                                      | set the data of amis-editor                                                                                           |
-| togggeMobile  | Function | `togggeMobile(Boolean) `                                                                                                                 | Switch between pc and mobile mode                                                                                     |
-| togglePreview | Function | `togglePreview(Boolean)`'                                                                                                                | Preview and edit mode switching                                                                                       |
+<table>
+    <tr>
+        <td>prop</td>
+        <td>isPreview</td>
+        <td>isMobile</td>
+        <td>navHeight</td>
+        <td>isTools</td>
+        <td>sources</td>
+        <td>theme</td>
+        <td>loop</td>
+        <td>toolbar</td>
+        <td>value</td>
+        <td>onChange</td>
+        <td>obtain</td>
+        <td>copy</td>
+        <td>clear</td>
+        <td>getSchema</td>
+        <td>setSchema</td>
+        <td>togggeMobile</td>
+        <td>togglePreview</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Boolean</td>
+        <td>Boolean</td>
+        <td>Number</td>
+        <td>Boolean</td>
+        <td>Array</td>
+        <td>Boolean</td>
+        <td>Boolean</td>
+        <td>Object</td>
+        <td>Object</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+        <td>Function</td>
+    </tr>
+    <tr>
+        <td>default</td>
+        <td>false</td>
+        <td>false</td>
+        <td>50</td>
+        <td>true</td>
+        <td>[]</td>
+        <td>false</td>
+        <td>false</td>
+        <td>` {title: 'vue-amis-editor',preview: 'preview',release: 'release',edit: 'edit',obtain: 'obtain',copy: "copy",clear: 'clear',set: "set"}`</td>
+        <td>`{message: 'message'}`</td>
+        <td>`onChange(e)`</td>
+        <td>`obtain`</td>
+        <td>`copy`</td>
+        <td>`clear`</td>
+        <td>`getSchema`</td>
+        <td>`setSchema(Schema)`</td>
+        <td>`togggeMobile(Boolean) `</td>
+        <td>`togglePreview(Boolean)`'</td>
+    </tr>
+    <tr>
+        <td>explain</td>
+        <td>Whether it is in preview</td>
+        <td>Is it mobile</td>
+        <td>Toolbar height</td>
+        <td>Show and hide the toolbar</td>
+        <td>video's source link</td>
+        <td>autoplay when video is loaded</td>
+        <td><a href="https://aisuda.bce.baidu.com/amis/zh-CN/docs/start/getting-started#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98">amis theme</a> </td>
+        <td>Toolbar configuration, support for internationalization</td>
+        <td><a href="https://aisuda.bce.baidu.com/amis/zh-CN/docs/types/schemanode">schemanode</a></td>
+        <td><a href="https://www.npmjs.com/package/amis-editor">amis onChange</a></td>
+        <td>Get the data in the current amis-editor</td>
+        <td>Copy the data of amis-editor</td>
+        <td>data for clearamis-editor</td>
+        <td>Get the data of amis-editor</td>
+        <td>set the data of amis-editor</td>
+        <td>Switch between pc and mobile mode</td>
+        <td>Preview and edit mode switching</td>
+    </tr>
+</table>
 
 ### Online examples
 
