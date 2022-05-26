@@ -86,4 +86,5 @@ export default Vue.extend({
 
 ### Online examples
 
-[![Edit gmullerb-react-reducer-provider](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/h7ml/vue-amis-editor)
+[amis-admin-vue Online examples](amis-admin-vue.vercel.app/index)
+[amis-admin-vue repo](https://github.com/h7ml/amis-admin-vue/tree/master)
