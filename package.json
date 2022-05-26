@@ -1,6 +1,6 @@
 {
   "name": "vue-amis-editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue-amis-editor",
   "main": "src/vue-amis-editor.vue",
   "browser": "src/vue-amis-editor.vue",
