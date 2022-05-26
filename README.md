@@ -84,7 +84,29 @@ export default Vue.extend({
 
 ```
 
+#### props：
+
+| prop          | type     | default                                                                                                                                  | explain                                                                                                               |
+| ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------- |
+| isPreview     | Boolean  | false                                                                                                                                    | Whether it is in preview                                                                                              |
+| isMobile      | Boolean  | false                                                                                                                                    | Is it mobile                                                                                                          | isMobile |
+| navHeight     | Number   | 50                                                                                                                                       | Toolbar height                                                                                                        |
+| isTools       | Boolean  | true                                                                                                                                     | Show and hide the toolbar                                                                                             |
+| sources       | Array    | []                                                                                                                                       | video's source link                                                                                                   |
+| theme         | Boolean  | false                                                                                                                                    | autoplay when video is loaded                                                                                         |
+| loop          | Boolean  | false                                                                                                                                    | [amis theme](https://aisuda.bce.baidu.com/amis/zh-CN/docs/start/getting-started#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98) |
+| toolbar       | Object   | ` {title: 'vue-amis-editor',preview: 'preview',release: 'release',edit: 'edit',obtain: 'obtain',copy: "copy",clear: 'clear',set: "set"}` | Toolbar configuration, support for internationalization                                                               |
+| value         | Object   | `{message: 'message'}`                                                                                                                   | [schemanode](https://aisuda.bce.baidu.com/amis/zh-CN/docs/types/schemanode)                                           |
+| onChange      | Function | `onChange(e)`                                                                                                                            | [amis onChange](https://www.npmjs.com/package/amis-editor)                                                            |
+| obtain        | Function | `obtain`                                                                                                                                 | Get the data in the current amis-editor                                                                               |
+| copy          | Function | `copy`                                                                                                                                   | Copy the data of amis-editor                                                                                          |
+| clear         | Function | `clear`                                                                                                                                  | data for clearamis-editor                                                                                             |
+| getSchema     | Function | `getSchema`                                                                                                                              | Get the data of amis-editor                                                                                           |
+| setSchema     | Function | `setSchema(Schema)`                                                                                                                      | set the data of amis-editor                                                                                           |
+| togggeMobile  | Function | `togggeMobile(Boolean) `                                                                                                                 | Switch between pc and mobile mode                                                                                     |
+| togglePreview | Function | `togglePreview(Boolean)`'                                                                                                                | Preview and edit mode switching                                                                                       |
+
 ### Online examples
 
-[amis-admin-vue Online examples](amis-admin-vue.vercel.app/index)
-[amis-admin-vue repo](https://github.com/h7ml/amis-admin-vue/tree/master)
+- [amis-admin-vue Online examples](amis-admin-vue.vercel.app/index)
+- [amis-admin-vue repo](https://github.com/h7ml/amis-admin-vue/tree/master)
