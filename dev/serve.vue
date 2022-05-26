@@ -9,7 +9,9 @@ export default Vue.extend({
   },
   data() {
     return {
-      preview: true,
+      preview: false,
+      mobile: false,
+      theme: 'antd',
       schema: {
         type: 'tasks',
         name: 'tasks',
@@ -35,11 +37,17 @@ export default Vue.extend({
       },
     }
   },
+  mounted() {
+    this.$nextTick((e) => {
+      // console.log(this.$refs)
+      // this.$refs.amisEditor.onChange(this.schema)
+    })
+  },
 })
 </script>
 
 <template>
   <div id="app">
-    <vue-amis-editor :is-preview="preview" :value="schema" />
+    <vue-amis-editor :is-preview="preview" ref="amisEditor" :is-mobile="mobile" />
   </div>
 </template>
